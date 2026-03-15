@@ -1,4 +1,5 @@
-<>
+function ConvertedCode() {
+  return (
   <style
     dangerouslySetInnerHTML={{
       __html:
@@ -898,4 +899,7 @@
       />
     </div>
   </div>
-</>
+  );
+}
+
+export default ConvertedCode;
