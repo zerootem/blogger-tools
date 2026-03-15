@@ -1,12 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
-import Toolbar from './Toolbar';
-import ConvertedCode from './ConvertedCode.jsx';
+import React from 'react';
+import ConvertedCode from './ConvertedCode';
 
 function App() {
-  return (
-    <ConvertedCode />
-  );
+  return <ConvertedCode />;
 }
 
 export default App;
