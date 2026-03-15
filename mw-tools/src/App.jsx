@@ -1,31 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import Toolbar from './Toolbar';
+import ConvertedCode from './ConvertedCode.jsx';
 
 function App() {
-  const [blocks, setBlocks] = useState([]);
-  
-  // دالة لإضافة عنصر جديد
-  const addBlock = (type) => {
-    const newBlock = {
-      id: Date.now() + '-' + Math.random().toString(36).substr(2, 5),
-      type: type,
-      content: '',
-      // هنا باقي الخصائص حسب نوع العنصر
-    };
-    setBlocks([...blocks, newBlock]);
-  };
-
   return (
-    <div className="modweeb-generator">
-      {/* هنا سنضع واجهة الأداة كاملة */}
-      <div className="modweeb-gen-header">
-        <h1>مولد المقال - نسخة React</h1>
-      </div>
-      
-      <div className="modweeb-gen-main">
-        <p>جاري نقل الكود...</p>
-      </div>
-    </div>
+    <ConvertedCode />
   );
 }
 
